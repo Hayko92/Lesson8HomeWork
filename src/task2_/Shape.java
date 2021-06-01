@@ -1,6 +1,6 @@
 package task2_;
 
-public class Shape {
+public abstract class Shape {
     private String color = "red";
     private boolean filled = true;
 
@@ -28,6 +28,9 @@ public class Shape {
         this.filled = filled;
     }
 
+    public abstract double getArea() ;
+    public abstract double getPerimeter() ;
+    public abstract String getType();
     @Override
     public String toString() {
         return "Shape[" +

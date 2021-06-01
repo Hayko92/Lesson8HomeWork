@@ -44,6 +44,11 @@ public class Rectangle extends Shape {
     }
 
     @Override
+    public String getType() {
+        return "Rectangle";
+    }
+
+    @Override
     public String toString() {
         return "Rectangle[" + super.toString() +
                 ", width=" + width +
